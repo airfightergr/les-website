@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.textH1 {
+  display: flex;
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+  z-index: 10;
+  justify-content: center;
+  align-content: center;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 1200px;
+  height: 800px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  z-index: 9;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: white;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+  opacity: 0.8;
+}
+
+.main_page{
+  padding: 50px;
+  display: flex;
+  columns: 2;
+  flex: 1;
+}
+
+p {
+  padding: 20px;
+
+  font-family: Play;
+  font-size: 20px;
+}
+
+h1 {
+  padding: 20px;
+  color: darkgrey;
+  font-family: Play;
+  font-size: 50px;
+}
+
+.para-image {
+  width: 50vw;
+  
+}
+
+
+.hide-current-image {
+  display: none;
+}
+

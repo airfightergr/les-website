@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  position: relative;
+}
+
+.navBar {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+}
