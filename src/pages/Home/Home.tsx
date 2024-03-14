@@ -6,15 +6,19 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
-import './styles.css'
-import Img01 from './images/Saab2.jpg';
-import Img02 from './images/DC3v2.jpg';
-import Img03 from './images/c23v2.jpg';
-import Img04 from './images/Duchess.jpg';
-import ImgPara01 from './images/saab1.png'
+import './styles.css';
 import paragraphs from './data';
 
+const Img01 = require('./images/Saab2.jpg');
+const Img02 = require('./images/DC3v2.jpg');
+const Img03 = require('./images/c23v2.jpg');
+const Img04 = require('./images/Duchess.jpg');
+const ImgPara01 = require('./images/saab1.png');
+
 const images = [Img01, Img02, Img03, Img04];
+
+interface SwiperProps {
+}
 
 export default function Home() {
 
@@ -24,7 +28,7 @@ export default function Home() {
     <Swiper
       effect = {'coverflow'}
       grabCursor = {true}
-      centerSildes = {false}
+      centeredSlides = {false}
       modules = {[Navigation, Pagination, EffectCoverflow, Autoplay]}
       loop = {true}
       speed = {1000}

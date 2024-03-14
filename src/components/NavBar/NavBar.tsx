@@ -1,12 +1,18 @@
-import React from "react";
+import React, {ReactNode, FC} from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import './NavBar.css';
-import lesLogo from "./../images/les.png";
+const lesLogo = require("./../images/les.png");
 
+interface CustomLinkProps {
+  to: string;
+  children: ReactNode;
+}
 
+interface NavBarProps {
+  className?: string;
+}
 
-export default function NavBar() {
-
+export default function NavBar({className}: NavBarProps) {
   
   return (
   <nav className="nav">
@@ -25,7 +31,7 @@ export default function NavBar() {
   );
 }
 
-function CustomLink({to, children, ...props}) {
+function CustomLink({to, children, ...props}: CustomLinkProps) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({path: resolvedPath.pathname, end: true})
 
@@ -35,3 +41,4 @@ function CustomLink({to, children, ...props}) {
     </li>
   );
 }
+
